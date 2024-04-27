@@ -10,6 +10,4 @@ public interface IClienteDAO {
     public boolean excluir(Integer cpf);
     public boolean alterar(Cliente cliente);
     public Cliente consultar(Integer cpf);
-    public Collection<Cliente> buscarTodos();
-
 }

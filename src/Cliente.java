@@ -53,10 +53,6 @@ public class Cliente {
         return cpf;
     }
 
-    public void setCpf(Integer cpf) {
-        this.cpf = cpf;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

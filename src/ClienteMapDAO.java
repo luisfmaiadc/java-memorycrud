@@ -1,4 +1,3 @@
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -54,8 +53,4 @@ public class ClienteMapDAO implements IClienteDAO {
         return this.map.get(cpf);
     }
 
-    @Override
-    public Collection<Cliente> buscarTodos() {
-        return this.map.values();
-    }
 }
