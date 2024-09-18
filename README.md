@@ -1,35 +1,40 @@
-# CRUD em memória na linguagem Java _- Luis Felipe Maia_
-Este repositório contém um exemplo de um sistema **CRUD (Create, Read, Update, Delete) em memória implementado em Java.** O sistema permite o gerenciamento de informações de clientes, incluindo operações para cadastrar, consultar, alterar e excluir.
+<h1 align="center">Projeto Java - CRUD em Memória</h1>
+<p align="center">
+ <a href="#started">Começando</a> • 
+  <a href="#cloning">Clonando</a> •
+ <a href="#function">Funções</a> •
+ <a href="#thanks">Agradecimentos</a>
+</p>
 
-<div align="center">
-  
-  ![Java](https://antoniomedeiros.dev/files/2012/07/java.jpg)
+<p align="center" style="margin-bottom: 20;">
+    <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+</p>
 
-</div>
+Seja bem-vindo(a) ao meu primeiro projeto adicionado ao GitHub. Desenvolvi uma simples aplicação CRUD em memória desenvolvida em Java que gerencia dados de clientes. Cada cliente é representado por um objeto com os seguintes atributos: nome, endereço, cidade, estado e CPF. Para facilitar a interação com o usuário, a aplicação utiliza o componente gráfico JOptionPane, permitindo uma interface simples e eficiente sem necessidade de interações diretamente pelo terminal.
 
-## Classes e Interfaces
-O sistema é composto pelas seguintes classes e interfaces:
+<h2 id="started">🚀 Começando</h2>
 
-* **IClienteDAO:** Esta interface define os métodos que serão usados para interagir com os dados do cliente. Os métodos incluem cadastrar(), excluir(), alterar(), consultar() e buscarTodos().
+Antes de começar, verifique se você possui as seguintes ferramentas instaladas em sua máquina:
 
-* **Main:** Esta classe contém a lógica principal do programa. Ela usa uma implementação da interface _IClienteDAO_ para interagir com os dados do cliente.
+- [Java](https://www.oracle.com/java/technologies/downloads/#java22)
 
-* **Cliente:** Esta classe representa um cliente com atributos como nome, endereço, cidade, estado e CPF. Ela também inclui métodos para obter e definir esses atributos.
+<h2 id="cloning">👾 Clonando</h2>
 
-* **ClienteMapDAO:** Esta classe implementa a interface _IClienteDAO_ e usa um HashMap para armazenar os dados do cliente.
+Como clonar o projeto:
+```bash
+git clone git@github.com:luisfmaiadc/java-memorycrud.git
+```
 
-## Funcionalidades
+<h2 id="function">📝 Funcionalidades</h2>
+
 O sistema permite ao usuário realizar as seguintes operações:
 
-1. **Cadastrar um novo cliente:** O usuário pode inserir as informações do cliente, que são posteriormente armazenadas no sistema;
+- Cadastrar um novo cliente: o usuário pode inserir as informações do cliente, que são posteriormente armazenadas no sistema;
+- Consultar um cliente: o usuário pode consultar as informações de um cliente existente fornecendo o CPF do cliente;
+- Alterar as informações de um cliente: o usuário pode alterar as informações de um cliente existente;
+- Excluir um cliente: o usuário pode excluir um cliente existente do sistema;
+- Sair do sistema: O usuário pode sair do sistema a qualquer momento.
 
-2. **Consultar um cliente:** O usuário pode consultar as informações de um cliente existente fornecendo o CPF do cliente;
+<h2 id="thanks">🤝 Obrigado</h2>
 
-3. **Alterar as informações de um cliente:** O usuário pode alterar as informações de um cliente existente;
-
-4. **Excluir um cliente:** O usuário pode excluir um cliente existente do sistema;
-
-5. **Sair do sistema:** O usuário pode sair do sistema a qualquer momento.
-
-# Obrigado
 Espero que você ache este repositório útil para entender como implementar um sistema CRUD em Java. Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para abrir uma issue. 😄
